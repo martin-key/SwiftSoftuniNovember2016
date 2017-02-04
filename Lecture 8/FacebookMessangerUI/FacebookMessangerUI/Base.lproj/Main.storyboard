@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JNT-NR-LsV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="6su-9U-Ydm">
+            <objects>
+                <tableViewController storyboardIdentifier="MessengerTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kQT-LJ-xsk" customClass="MessengerTableViewController" customModule="FacebookMessangerUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="yMr-cv-FMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessangerTableViewCellIdentifier" rowHeight="80" id="LxC-qd-MY8" customClass="MessangerTableViewCell" customModule="FacebookMessangerUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LxC-qd-MY8" id="Z7v-b7-xzs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world. Ще имате 2ки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTc-aX-ZQ4">
+                                            <rect key="frame" x="76" y="38" width="214" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="POO-OU-Ldd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:52" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-C2-3KI">
+                                            <rect key="frame" x="310" y="15" width="57" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="57" id="60h-Zb-YiX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IfG-xt-kgu">
+                                            <rect key="frame" x="355" y="47" width="12" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="12" id="Z7M-uP-xec"/>
+                                                <constraint firstAttribute="width" constant="12" id="e1Y-iS-fyD"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOO-jo-VBQ">
+                                            <rect key="frame" x="8" y="10" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Bsh-eu-0Ay"/>
+                                                <constraint firstAttribute="width" constant="60" id="CKi-yo-9f9"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="FacebookImage.jpg"/>
+                                            <connections>
+                                                <action selector="imageButtonTapped:" destination="LxC-qd-MY8" eventType="touchUpInside" id="AVL-CM-vtX"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin Kuvandzhiev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVn-0m-2Qx">
+                                            <rect key="frame" x="76" y="15" width="240" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KTc-aX-ZQ4" firstAttribute="top" secondItem="tVn-0m-2Qx" secondAttribute="bottom" constant="2" id="1sT-hx-JhE"/>
+                                        <constraint firstItem="tOO-jo-VBQ" firstAttribute="top" secondItem="Z7v-b7-xzs" secondAttribute="topMargin" constant="2" id="7H7-NM-REp"/>
+                                        <constraint firstItem="IfG-xt-kgu" firstAttribute="top" secondItem="eTL-C2-3KI" secondAttribute="bottom" constant="11" id="7Kq-ke-vdW"/>
+                                        <constraint firstItem="tVn-0m-2Qx" firstAttribute="top" secondItem="Z7v-b7-xzs" secondAttribute="topMargin" constant="7" id="7z3-5i-0G7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tOO-jo-VBQ" secondAttribute="bottom" constant="2" id="817-p0-XBS"/>
+                                        <constraint firstItem="KTc-aX-ZQ4" firstAttribute="leading" secondItem="tOO-jo-VBQ" secondAttribute="trailing" constant="8" id="8gZ-Wf-3hy"/>
+                                        <constraint firstItem="IfG-xt-kgu" firstAttribute="trailing" secondItem="Z7v-b7-xzs" secondAttribute="trailingMargin" id="DPY-S3-LMv"/>
+                                        <constraint firstItem="tVn-0m-2Qx" firstAttribute="leading" secondItem="tOO-jo-VBQ" secondAttribute="trailing" constant="8" id="Obv-ej-4pu"/>
+                                        <constraint firstItem="IfG-xt-kgu" firstAttribute="leading" secondItem="KTc-aX-ZQ4" secondAttribute="trailing" constant="65" id="ZBD-DL-6hc"/>
+                                        <constraint firstItem="tOO-jo-VBQ" firstAttribute="leading" secondItem="Z7v-b7-xzs" secondAttribute="leadingMargin" id="bgh-zQ-4o7"/>
+                                        <constraint firstItem="eTL-C2-3KI" firstAttribute="trailing" secondItem="Z7v-b7-xzs" secondAttribute="trailingMargin" id="lMf-cT-DM1"/>
+                                        <constraint firstItem="eTL-C2-3KI" firstAttribute="top" secondItem="tVn-0m-2Qx" secondAttribute="top" id="nYb-WJ-Rfv"/>
+                                        <constraint firstItem="eTL-C2-3KI" firstAttribute="leading" secondItem="tVn-0m-2Qx" secondAttribute="trailing" constant="-6" id="pEl-RF-Jaa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="messageDetailLabel" destination="KTc-aX-ZQ4" id="Ki8-cP-tPo"/>
+                                    <outlet property="recepientImageViewButton" destination="tOO-jo-VBQ" id="Dhb-bi-0q0"/>
+                                    <outlet property="recepientNameLabel" destination="tVn-0m-2Qx" id="QWa-jh-UW5"/>
+                                    <outlet property="statusImageView" destination="IfG-xt-kgu" id="CJT-Q2-Fil"/>
+                                    <outlet property="timeLabel" destination="eTL-C2-3KI" id="Ws9-WD-hwa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kQT-LJ-xsk" id="aFY-wW-TdQ"/>
+                            <outlet property="delegate" destination="kQT-LJ-xsk" id="SlJ-aw-LnU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="x8e-7w-jrQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gnz-H0-A6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="190.25487256371815"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oN8-kD-a8I">
+            <objects>
+                <navigationController id="JNT-NR-LsV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ng5-iY-sOy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kQT-LJ-xsk" kind="relationship" relationship="rootViewController" id="6Db-X1-sam"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqa-hw-tCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="191"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FacebookImage.jpg" width="864" height="864"/>
+    </resources>
+</document>

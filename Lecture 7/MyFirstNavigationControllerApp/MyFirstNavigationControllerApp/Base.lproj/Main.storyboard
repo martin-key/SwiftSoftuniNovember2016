@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="us5-Cx-kPi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9Qz-NM-TP4">
+            <objects>
+                <navigationController id="us5-Cx-kPi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSm-Qj-tUy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ykm-ir-7HM" kind="relationship" relationship="rootViewController" id="G2v-kc-sfV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDC-ff-r5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="164"/>
+        </scene>
+        <!--Donald J. Trunp-->
+        <scene sceneID="YDH-Q3-614">
+            <objects>
+                <viewController id="ykm-ir-7HM" customClass="ViewController" customModule="MyFirstNavigationControllerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EQi-mT-jUh"/>
+                        <viewControllerLayoutGuide type="bottom" id="v81-SO-E9T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M6H-99-rNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-p3-Cwa">
+                                <rect key="frame" x="131" y="471" width="112" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="fcc-z8-Gvb"/>
+                                    <constraint firstAttribute="width" constant="112" id="jEo-Oc-9cM"/>
+                                </constraints>
+                                <state key="normal" title="Show Detail"/>
+                                <connections>
+                                    <segue destination="qPj-dg-DoN" kind="show" id="kfp-0e-KGO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Donald_Trump_official_portrait.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Blb-vR-vLq">
+                                <rect key="frame" x="55" y="114" width="265" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="EVR-1D-Wob"/>
+                                    <constraint firstAttribute="height" constant="265" id="GUm-FZ-9u1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donald J. Trump" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1p-Gi-Dnj">
+                                <rect key="frame" x="55" y="405" width="265" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="T97-Qh-ZuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="s1p-Gi-Dnj" secondAttribute="trailing" constant="39" id="0tx-Mb-tCK"/>
+                            <constraint firstItem="Blb-vR-vLq" firstAttribute="centerX" secondItem="M6H-99-rNd" secondAttribute="centerX" id="A3s-SM-9bf"/>
+                            <constraint firstItem="s1p-Gi-Dnj" firstAttribute="top" secondItem="Blb-vR-vLq" secondAttribute="bottom" constant="26" id="ArB-fO-3c3"/>
+                            <constraint firstItem="cPN-p3-Cwa" firstAttribute="top" secondItem="s1p-Gi-Dnj" secondAttribute="bottom" constant="29" id="JFY-yE-Hgk"/>
+                            <constraint firstItem="cPN-p3-Cwa" firstAttribute="centerX" secondItem="M6H-99-rNd" secondAttribute="centerX" id="NtY-la-GaQ"/>
+                            <constraint firstItem="Blb-vR-vLq" firstAttribute="top" secondItem="EQi-mT-jUh" secondAttribute="bottom" constant="50" id="WfV-Mg-TVc"/>
+                            <constraint firstItem="s1p-Gi-Dnj" firstAttribute="leading" secondItem="M6H-99-rNd" secondAttribute="leadingMargin" constant="39" id="nkj-Hn-8fJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Donald J. Trunp" id="RWx-Qt-nmv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnl-9f-ZKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="164.16791604197903"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m7N-Za-ohv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Tv-gL-6dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="qPj-dg-DoN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Nk-bs-M2M"/>
+                        <viewControllerLayoutGuide type="bottom" id="kfb-hu-cdQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UPG-CI-Dut">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ouK-y4-2P8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Donald John Trump (born June 14, 1946) is an American businessman, television personality and politician, who currently serves as the 45th President of the United States.
+
+Born and raised in Queens, New York City, Trump received an economics degree from the Wharton School of the University of Pennsylvania in 1968. In 1971, he took charge of his family's real estate and construction firm, Elizabeth Trump &amp; Son, which was later renamed The Trump Organization. During his business career, Trump has built, renovated, and managed numerous office towers, hotels, casinos, and golf courses. He owned the Miss USA and Miss Universe pageants from 1996 to 2015, and has lent the use of his name in the branding of various products. From 2004 to 2015, he hosted The Apprentice, a reality television series on NBC. As of 2016, Forbes listed him as the 324th wealthiest person in the world (113th in the United States), with a net worth of $4.5 billion.
+
+Trump sought the Reform Party's presidential nomination in 2000, but withdrew before voting began. He considered running as a Republican for the 2012 election, but ultimately decided against it. In June 2015, he announced his candidacy for the 2016 election, and quickly emerged as the front-runner among 17 contenders in the Republican primaries. His final opponents suspended their campaigns in May 2016, and in July he was formally nominated at the Republican Convention along with Mike Pence as his running mate. His campaign received unprecedented media coverage and international attention. Many of his statements in interviews, on social media, and at campaign rallies were controversial or false.[2][3][4]
+
+Trump won the general election on November 8, 2016, against Democratic rival Hillary Clinton, and assumed office on January 20, 2017. At age 70, he is the oldest and wealthiest person to assume the presidency, the first without prior military or governmental service, and the fifth elected with less than a plurality of the national popular vote.
+
+Trump's platform emphasized renegotiating U.S.–China relations and free trade agreements such as NAFTA and the Trans-Pacific Partnership, strongly enforcing immigration laws, and building a new wall along the U.S.–Mexico border. His other positions include pursuing energy independence while opposing climate change regulations such as the Clean Power Plan and the Paris Agreement, modernizing and expediting services for veterans, repealing and replacing the Affordable Care Act, abolishing Common Core education standards, investing in infrastructure, simplifying the tax code while reducing taxes across the board, and imposing tariffs on imports by companies offshoring jobs. He advocates a largely non-interventionist approach to foreign policy while increasing military spending, "extreme vetting" of Muslim immigrants to preempt domestic Islamic terrorism, and aggressive military action against ISIS. His positions have been described by scholars and commentators as populist, protectionist, and nationalist.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kfb-hu-cdQ" firstAttribute="top" secondItem="ouK-y4-2P8" secondAttribute="bottom" id="35r-4U-MtR"/>
+                            <constraint firstItem="ouK-y4-2P8" firstAttribute="leading" secondItem="UPG-CI-Dut" secondAttribute="leading" id="S00-Wv-0IT"/>
+                            <constraint firstAttribute="trailing" secondItem="ouK-y4-2P8" secondAttribute="trailing" id="Zza-rF-uXj"/>
+                            <constraint firstItem="ouK-y4-2P8" firstAttribute="top" secondItem="7Nk-bs-M2M" secondAttribute="bottom" id="nAI-Us-YeY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1540" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Donald_Trump_official_portrait.jpg" width="1280" height="1600"/>
+    </resources>
+</document>

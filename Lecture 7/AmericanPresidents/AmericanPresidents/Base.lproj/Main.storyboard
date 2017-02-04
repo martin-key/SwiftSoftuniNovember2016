@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Od-gK-kwm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Presidents-->
+        <scene sceneID="M4x-VR-0xj">
+            <objects>
+                <tableViewController id="MfO-vg-FDb" customClass="TableViewController" customModule="AmericanPresidents" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7c6-Y5-xxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" textLabel="Pk0-vo-c57" detailTextLabel="veQ-02-P1A" style="IBUITableViewCellStyleSubtitle" id="D53-7w-Ux8">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D53-7w-Ux8" id="Jwa-ej-9kH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pk0-vo-c57">
+                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="veQ-02-P1A">
+                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MfO-vg-FDb" id="tk4-VW-CYp"/>
+                            <outlet property="delegate" destination="MfO-vg-FDb" id="Qmv-Bv-gDt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Presidents" id="G9D-SI-zjJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CcZ-OY-dOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3cf-gn-bUz">
+            <objects>
+                <navigationController id="5Od-gK-kwm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Re-yS-Twn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MfO-vg-FDb" kind="relationship" relationship="rootViewController" id="KhS-6A-RZ0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEb-iP-bkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-350" y="110"/>
+        </scene>
+        <!--Donald J. Trunp-->
+        <scene sceneID="3OW-vN-Wfw">
+            <objects>
+                <viewController storyboardIdentifier="PresidentDetailViewController" id="kJP-1v-byY" customClass="DetailViewController" customModule="AmericanPresidents" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l1n-bn-PgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="vT7-to-veG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lkq-Jq-Z08">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Donald_Trump_official_portrait.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ljd-tO-75y">
+                                <rect key="frame" x="55" y="70" width="265" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="1bM-4l-tJm"/>
+                                    <constraint firstAttribute="height" constant="265" id="G5m-bZ-u77"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donald Trump" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd1-gG-a0X">
+                                <rect key="frame" x="55" y="361" width="265" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="YYI-5l-8NG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="some text from somewhere" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2TT-BP-O6m">
+                                <rect key="frame" x="0.0" y="414" width="375" height="253"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2TT-BP-O6m" firstAttribute="leading" secondItem="Lkq-Jq-Z08" secondAttribute="leading" id="0VZ-cv-lfL"/>
+                            <constraint firstItem="2TT-BP-O6m" firstAttribute="top" secondItem="gd1-gG-a0X" secondAttribute="bottom" constant="16" id="9ma-ur-uq8"/>
+                            <constraint firstItem="Ljd-tO-75y" firstAttribute="centerX" secondItem="Lkq-Jq-Z08" secondAttribute="centerX" id="Ftv-kH-6iC"/>
+                            <constraint firstItem="gd1-gG-a0X" firstAttribute="top" secondItem="Ljd-tO-75y" secondAttribute="bottom" constant="26" id="LYa-oE-zfz"/>
+                            <constraint firstAttribute="trailing" secondItem="2TT-BP-O6m" secondAttribute="trailing" id="YkP-jI-6AW"/>
+                            <constraint firstItem="Ljd-tO-75y" firstAttribute="top" secondItem="l1n-bn-PgW" secondAttribute="bottom" constant="50" id="asc-sZ-6kb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gd1-gG-a0X" secondAttribute="trailing" constant="39" id="nuR-tp-buX"/>
+                            <constraint firstItem="gd1-gG-a0X" firstAttribute="leading" secondItem="Lkq-Jq-Z08" secondAttribute="leadingMargin" constant="39" id="qJ4-tR-gkC"/>
+                            <constraint firstItem="vT7-to-veG" firstAttribute="top" secondItem="2TT-BP-O6m" secondAttribute="bottom" id="zmv-kS-T4X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Donald J. Trunp" id="P0x-7b-LBG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aE5-YD-S7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Donald_Trump_official_portrait.jpg" width="1280" height="1600"/>
+    </resources>
+</document>
