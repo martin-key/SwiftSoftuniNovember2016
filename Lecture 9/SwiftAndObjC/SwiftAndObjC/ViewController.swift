@@ -1,26 +1,24 @@
 //
 //  ViewController.swift
-//  BezierPathTests
+//  SwiftAndObjC
 //
-//  Created by Martin Kuvandzhiev on 1/28/17.
+//  Created by Martin Kuvandzhiev on 2/4/17.
 //  Copyright © 2017 Martin Kuvandzhiev. All rights reserved.
 //
 
 import UIKit
-import DynamicButton
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var button: DynamicButton!
+    var aProperty: String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.button.setStyle(DynamicButtonStyle.close, animated: false)
-        
-        self.view.backgroundColor = UIColor.myCustomColor()
-//        let dynamicButton = DynamicButton(style: DynamicButtonStyle.hamburger)
+        let objCInstance = MyObjCClass()
+        print(objCInstance.myFunction(withArgument: "Hello"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +28,4 @@ class ViewController: UIViewController {
 
 
 }
-
-
-
 

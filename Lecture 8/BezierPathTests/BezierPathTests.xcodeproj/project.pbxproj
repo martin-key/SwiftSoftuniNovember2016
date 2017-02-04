@@ -13,6 +13,7 @@
 		101547751E3D242A0084D939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101547741E3D242A0084D939 /* Assets.xcassets */; };
 		101547781E3D242A0084D939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101547761E3D242A0084D939 /* LaunchScreen.storyboard */; };
 		101547801E3D247C0084D939 /* DrawableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1015477F1E3D247C0084D939 /* DrawableView.swift */; };
+		10B64BFD1E463D1000203CEB /* UIColor+MyAppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B64BFC1E463D1000203CEB /* UIColor+MyAppColors.swift */; };
 		8A300EC33D7081CD28E762AF /* Pods_BezierPathTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336A71A33B95FAD3E653BE1 /* Pods_BezierPathTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		101547771E3D242A0084D939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101547791E3D242A0084D939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1015477F1E3D247C0084D939 /* DrawableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableView.swift; sourceTree = "<group>"; };
+		10B64BFC1E463D1000203CEB /* UIColor+MyAppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MyAppColors.swift"; sourceTree = "<group>"; };
 		9F309AF8FE7E6EB0D35868D0 /* Pods-BezierPathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BezierPathTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BezierPathTests/Pods-BezierPathTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B336A71A33B95FAD3E653BE1 /* Pods_BezierPathTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BezierPathTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B652A45861828451119BCCD5 /* Pods-BezierPathTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BezierPathTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BezierPathTests/Pods-BezierPathTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				1015476D1E3D242A0084D939 /* AppDelegate.swift */,
 				1015476F1E3D242A0084D939 /* ViewController.swift */,
+				10B64BFC1E463D1000203CEB /* UIColor+MyAppColors.swift */,
 				101547711E3D242A0084D939 /* Main.storyboard */,
 				1015477F1E3D247C0084D939 /* DrawableView.swift */,
 				101547741E3D242A0084D939 /* Assets.xcassets */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				101547801E3D247C0084D939 /* DrawableView.swift in Sources */,
+				10B64BFD1E463D1000203CEB /* UIColor+MyAppColors.swift in Sources */,
 				101547701E3D242A0084D939 /* ViewController.swift in Sources */,
 				1015476E1E3D242A0084D939 /* AppDelegate.swift in Sources */,
 			);
@@ -383,6 +387,7 @@
 				1015477E1E3D242A0084D939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
